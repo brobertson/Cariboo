@@ -1,0 +1,711 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN" "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content=""/>
+    <meta name="dtb:depth" content="1"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>AntigoneMachine readable text</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navpoint-1" playOrder="1">
+      <navLabel>
+        <text>episode</text>
+      </navLabel>
+      <content src="chapter-1.html"/>
+    </navPoint>
+    <navPoint id="navpoint-2" playOrder="2">
+      <navLabel>
+        <text>choral</text>
+      </navLabel>
+      <content src="chapter-2.html"/>
+      <navPoint id="navpoint-3" playOrder="3">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-3.html"/>
+      </navPoint>
+      <navPoint id="navpoint-4" playOrder="4">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-4.html"/>
+      </navPoint>
+      <navPoint id="navpoint-5" playOrder="5">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-5.html"/>
+      </navPoint>
+      <navPoint id="navpoint-6" playOrder="6">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-6.html"/>
+      </navPoint>
+      <navPoint id="navpoint-7" playOrder="7">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-7.html"/>
+      </navPoint>
+      <navPoint id="navpoint-8" playOrder="8">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-8.html"/>
+      </navPoint>
+      <navPoint id="navpoint-9" playOrder="9">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-9.html"/>
+      </navPoint>
+      <navPoint id="navpoint-10" playOrder="10">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-10.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-3" playOrder="3">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-3.html"/>
+    </navPoint>
+    <navPoint id="navpoint-4" playOrder="4">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-4.html"/>
+    </navPoint>
+    <navPoint id="navpoint-5" playOrder="5">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-5.html"/>
+    </navPoint>
+    <navPoint id="navpoint-6" playOrder="6">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-6.html"/>
+    </navPoint>
+    <navPoint id="navpoint-7" playOrder="7">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-7.html"/>
+    </navPoint>
+    <navPoint id="navpoint-8" playOrder="8">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-8.html"/>
+    </navPoint>
+    <navPoint id="navpoint-9" playOrder="9">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-9.html"/>
+    </navPoint>
+    <navPoint id="navpoint-10" playOrder="10">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-10.html"/>
+    </navPoint>
+    <navPoint id="navpoint-11" playOrder="11">
+      <navLabel>
+        <text>episode</text>
+      </navLabel>
+      <content src="chapter-11.html"/>
+    </navPoint>
+    <navPoint id="navpoint-12" playOrder="12">
+      <navLabel>
+        <text>choral</text>
+      </navLabel>
+      <content src="chapter-12.html"/>
+      <navPoint id="navpoint-13" playOrder="13">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-13.html"/>
+      </navPoint>
+      <navPoint id="navpoint-14" playOrder="14">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-14.html"/>
+      </navPoint>
+      <navPoint id="navpoint-15" playOrder="15">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-15.html"/>
+      </navPoint>
+      <navPoint id="navpoint-16" playOrder="16">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-16.html"/>
+      </navPoint>
+      <navPoint id="navpoint-17" playOrder="17">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-17.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-13" playOrder="13">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-13.html"/>
+    </navPoint>
+    <navPoint id="navpoint-14" playOrder="14">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-14.html"/>
+    </navPoint>
+    <navPoint id="navpoint-15" playOrder="15">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-15.html"/>
+    </navPoint>
+    <navPoint id="navpoint-16" playOrder="16">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-16.html"/>
+    </navPoint>
+    <navPoint id="navpoint-17" playOrder="17">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-17.html"/>
+    </navPoint>
+    <navPoint id="navpoint-18" playOrder="18">
+      <navLabel>
+        <text>episode</text>
+      </navLabel>
+      <content src="chapter-18.html"/>
+      <navPoint id="navpoint-19" playOrder="19">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-19.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-19" playOrder="19">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-19.html"/>
+    </navPoint>
+    <navPoint id="navpoint-20" playOrder="20">
+      <navLabel>
+        <text>choral</text>
+      </navLabel>
+      <content src="chapter-20.html"/>
+      <navPoint id="navpoint-21" playOrder="21">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-21.html"/>
+      </navPoint>
+      <navPoint id="navpoint-22" playOrder="22">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-22.html"/>
+      </navPoint>
+      <navPoint id="navpoint-23" playOrder="23">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-23.html"/>
+      </navPoint>
+      <navPoint id="navpoint-24" playOrder="24">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-24.html"/>
+      </navPoint>
+      <navPoint id="navpoint-25" playOrder="25">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-25.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-21" playOrder="21">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-21.html"/>
+    </navPoint>
+    <navPoint id="navpoint-22" playOrder="22">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-22.html"/>
+    </navPoint>
+    <navPoint id="navpoint-23" playOrder="23">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-23.html"/>
+    </navPoint>
+    <navPoint id="navpoint-24" playOrder="24">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-24.html"/>
+    </navPoint>
+    <navPoint id="navpoint-25" playOrder="25">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-25.html"/>
+    </navPoint>
+    <navPoint id="navpoint-26" playOrder="26">
+      <navLabel>
+        <text>episode</text>
+      </navLabel>
+      <content src="chapter-26.html"/>
+    </navPoint>
+    <navPoint id="navpoint-27" playOrder="27">
+      <navLabel>
+        <text>choral</text>
+      </navLabel>
+      <content src="chapter-27.html"/>
+      <navPoint id="navpoint-28" playOrder="28">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-28.html"/>
+      </navPoint>
+      <navPoint id="navpoint-29" playOrder="29">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-29.html"/>
+      </navPoint>
+      <navPoint id="navpoint-30" playOrder="30">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-30.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-28" playOrder="28">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-28.html"/>
+    </navPoint>
+    <navPoint id="navpoint-29" playOrder="29">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-29.html"/>
+    </navPoint>
+    <navPoint id="navpoint-30" playOrder="30">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-30.html"/>
+    </navPoint>
+    <navPoint id="navpoint-31" playOrder="31">
+      <navLabel>
+        <text>choral</text>
+      </navLabel>
+      <content src="chapter-31.html"/>
+      <navPoint id="navpoint-32" playOrder="32">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-32.html"/>
+      </navPoint>
+      <navPoint id="navpoint-33" playOrder="33">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-33.html"/>
+      </navPoint>
+      <navPoint id="navpoint-34" playOrder="34">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-34.html"/>
+      </navPoint>
+      <navPoint id="navpoint-35" playOrder="35">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-35.html"/>
+      </navPoint>
+      <navPoint id="navpoint-36" playOrder="36">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-36.html"/>
+      </navPoint>
+      <navPoint id="navpoint-37" playOrder="37">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-37.html"/>
+      </navPoint>
+      <navPoint id="navpoint-38" playOrder="38">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-38.html"/>
+      </navPoint>
+      <navPoint id="navpoint-39" playOrder="39">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-39.html"/>
+      </navPoint>
+      <navPoint id="navpoint-40" playOrder="40">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-40.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-32" playOrder="32">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-32.html"/>
+    </navPoint>
+    <navPoint id="navpoint-33" playOrder="33">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-33.html"/>
+    </navPoint>
+    <navPoint id="navpoint-34" playOrder="34">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-34.html"/>
+    </navPoint>
+    <navPoint id="navpoint-35" playOrder="35">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-35.html"/>
+    </navPoint>
+    <navPoint id="navpoint-36" playOrder="36">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-36.html"/>
+    </navPoint>
+    <navPoint id="navpoint-37" playOrder="37">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-37.html"/>
+    </navPoint>
+    <navPoint id="navpoint-38" playOrder="38">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-38.html"/>
+    </navPoint>
+    <navPoint id="navpoint-39" playOrder="39">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-39.html"/>
+    </navPoint>
+    <navPoint id="navpoint-40" playOrder="40">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-40.html"/>
+    </navPoint>
+    <navPoint id="navpoint-41" playOrder="41">
+      <navLabel>
+        <text>episode</text>
+      </navLabel>
+      <content src="chapter-41.html"/>
+      <navPoint id="navpoint-42" playOrder="42">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-42.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-42" playOrder="42">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-42.html"/>
+    </navPoint>
+    <navPoint id="navpoint-43" playOrder="43">
+      <navLabel>
+        <text>choral</text>
+      </navLabel>
+      <content src="chapter-43.html"/>
+      <navPoint id="navpoint-44" playOrder="44">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-44.html"/>
+      </navPoint>
+      <navPoint id="navpoint-45" playOrder="45">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-45.html"/>
+      </navPoint>
+      <navPoint id="navpoint-46" playOrder="46">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-46.html"/>
+      </navPoint>
+      <navPoint id="navpoint-47" playOrder="47">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-47.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-44" playOrder="44">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-44.html"/>
+    </navPoint>
+    <navPoint id="navpoint-45" playOrder="45">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-45.html"/>
+    </navPoint>
+    <navPoint id="navpoint-46" playOrder="46">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-46.html"/>
+    </navPoint>
+    <navPoint id="navpoint-47" playOrder="47">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-47.html"/>
+    </navPoint>
+    <navPoint id="navpoint-48" playOrder="48">
+      <navLabel>
+        <text>episode</text>
+      </navLabel>
+      <content src="chapter-48.html"/>
+    </navPoint>
+    <navPoint id="navpoint-49" playOrder="49">
+      <navLabel>
+        <text>choral</text>
+      </navLabel>
+      <content src="chapter-49.html"/>
+      <navPoint id="navpoint-50" playOrder="50">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-50.html"/>
+      </navPoint>
+      <navPoint id="navpoint-51" playOrder="51">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-51.html"/>
+      </navPoint>
+      <navPoint id="navpoint-52" playOrder="52">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-52.html"/>
+      </navPoint>
+      <navPoint id="navpoint-53" playOrder="53">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-53.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-50" playOrder="50">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-50.html"/>
+    </navPoint>
+    <navPoint id="navpoint-51" playOrder="51">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-51.html"/>
+    </navPoint>
+    <navPoint id="navpoint-52" playOrder="52">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-52.html"/>
+    </navPoint>
+    <navPoint id="navpoint-53" playOrder="53">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-53.html"/>
+    </navPoint>
+    <navPoint id="navpoint-54" playOrder="54">
+      <navLabel>
+        <text>episode</text>
+      </navLabel>
+      <content src="chapter-54.html"/>
+      <navPoint id="navpoint-55" playOrder="55">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-55.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-55" playOrder="55">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-55.html"/>
+    </navPoint>
+    <navPoint id="navpoint-56" playOrder="56">
+      <navLabel>
+        <text>choral</text>
+      </navLabel>
+      <content src="chapter-56.html"/>
+      <navPoint id="navpoint-57" playOrder="57">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-57.html"/>
+      </navPoint>
+      <navPoint id="navpoint-58" playOrder="58">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-58.html"/>
+      </navPoint>
+      <navPoint id="navpoint-59" playOrder="59">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-59.html"/>
+      </navPoint>
+      <navPoint id="navpoint-60" playOrder="60">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-60.html"/>
+      </navPoint>
+      <navPoint id="navpoint-61" playOrder="61">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-61.html"/>
+      </navPoint>
+      <navPoint id="navpoint-62" playOrder="62">
+        <navLabel>
+          <text>strophe</text>
+        </navLabel>
+        <content src="chapter-62.html"/>
+      </navPoint>
+      <navPoint id="navpoint-63" playOrder="63">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-63.html"/>
+      </navPoint>
+      <navPoint id="navpoint-64" playOrder="64">
+        <navLabel>
+          <text>antistrophe</text>
+        </navLabel>
+        <content src="chapter-64.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-57" playOrder="57">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-57.html"/>
+    </navPoint>
+    <navPoint id="navpoint-58" playOrder="58">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-58.html"/>
+    </navPoint>
+    <navPoint id="navpoint-59" playOrder="59">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-59.html"/>
+    </navPoint>
+    <navPoint id="navpoint-60" playOrder="60">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-60.html"/>
+    </navPoint>
+    <navPoint id="navpoint-61" playOrder="61">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-61.html"/>
+    </navPoint>
+    <navPoint id="navpoint-62" playOrder="62">
+      <navLabel>
+        <text>strophe</text>
+      </navLabel>
+      <content src="chapter-62.html"/>
+    </navPoint>
+    <navPoint id="navpoint-63" playOrder="63">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-63.html"/>
+    </navPoint>
+    <navPoint id="navpoint-64" playOrder="64">
+      <navLabel>
+        <text>antistrophe</text>
+      </navLabel>
+      <content src="chapter-64.html"/>
+    </navPoint>
+    <navPoint id="navpoint-65" playOrder="65">
+      <navLabel>
+        <text>episode</text>
+      </navLabel>
+      <content src="chapter-65.html"/>
+      <navPoint id="navpoint-66" playOrder="66">
+        <navLabel>
+          <text>anapests</text>
+        </navLabel>
+        <content src="chapter-66.html"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navpoint-66" playOrder="66">
+      <navLabel>
+        <text>anapests</text>
+      </navLabel>
+      <content src="chapter-66.html"/>
+    </navPoint>
+  </navMap>
+</ncx>

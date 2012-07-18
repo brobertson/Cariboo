@@ -1,0 +1,7 @@
+export PATH=/home/ubuntu/Dropbox/Cariboo-Summer/bin:$PATH
+# Epubcheck
+function epubcheck() { java -jar /home/ubuntu/Dropbox/Cariboo-Summer/bin/lib/epubcheck-3.0b5/epubcheck-3.0b5.jar $@; }
+export -f epubcheck
+
+# Kindlegen
+export PATH=/home/ubuntu/Dropbox/Cariboo-Summer/bin:$PATH

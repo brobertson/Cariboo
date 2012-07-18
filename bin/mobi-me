@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# ===========
+# = MOBI ME =
+# ===========
+# epub to mobi
+# $1 - epub file path
+
+if [ $1 ]; then
+  FILE=$1
+else
+  echo "The epub file is missing."
+  exit 0
+fi
+
+kindlegen $FILE

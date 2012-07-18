@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# ===========
+# = EPUB ME =
+# ===========
+# folder to epub + epubcheck
+# $1 = epub folder path
+# $2 = epub name (optional)
+
+if [ $1 ]; then
+  FOLDER=$1
+else
+  echo "The epub folder path is missing."
+  exit 0
+fi
+
+cd $FOLDER
+
+if [ $2 ]; then
+  NAME=$2
+else
+  NAME=${PWD##*/}
+fi
+
+zip -0Xq ../$NAME.epub mimetype
+zip -Xr9Dq ../$NAME.epub * -x *.DS_Store
+
+cd ..
+
+epubcheck $NAME.epub

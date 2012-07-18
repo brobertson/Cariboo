@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# =============
+# = UNEPUB ME =
+# =============
+# epub to folder
+# $1 = epub file path
+
+if [ $1 ]; then
+  FILE=$1
+else
+  echo "The epub file path is missing."
+  exit 0
+fi
+
+if [ $2 ]; then
+  NAME=$2
+else
+  NAME=`echo "$FILE" | cut -d'.' -f1`
+fi
+
+unzip -q $FILE -d $NAME
