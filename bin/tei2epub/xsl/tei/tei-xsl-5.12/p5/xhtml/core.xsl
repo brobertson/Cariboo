@@ -618,12 +618,14 @@
     <xd:detail> </xd:detail>
   </xd:doc>
   <xsl:template match="tei:l">
+<div class="l">
 <xsl:if test="@n">
 <span class="linenum">
 <xsl:value-of select="@n"/>
  </span>
 </xsl:if>
 <xsl:apply-templates/>
+</div>
   </xsl:template>
   <xd:doc>
 <xd:short>Process elements tei:milestone section</xd:short>
