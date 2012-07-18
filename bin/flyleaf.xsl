@@ -1,36 +1,36 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
+<xsl:stylesheet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
   <xsl:template match="/">
 
-    <html>
+    <xhtml:html>
 
-    <body>
+    <xhtml:body>
 
-     <h1 style="font-size:20px;text-decoration:underline;text-align:center"> -Metadata Flyleaf- </h1>
+     <xhtml:h1 style="font-size:20px;text-decoration:underline;text-align:center"> -Metadata Flyleaf- </xhtml:h1>
  
-     <p style="text-align:center;line-heigth:10%"> <xsl:value-of select="//title"/>, <xsl:value-of select="//author"/></p>
+     <xhtml:p style="text-align:center;line-heigth:10%"> <xsl:value-of select="//title"/>, <xsl:value-of select="//author"/></xhtml:p>
  
-     <p style="text-align:center;line-height:10%"> <xsl:value-of select="//publisher"/></p>
+     <xhtml:p style="text-align:center;line-height:10%"> <xsl:value-of select="//publisher"/></xhtml:p>
 
-     <p style="text-align:center;line-height:10%"> <xsl:value-of select="//date"/></p>
+     <xhtml:p style="text-align:center;line-height:10%"> <xsl:value-of select="//date"/></xhtml:p>
      
-     <p style="text-align:center;line-height:10%"> <xsl:value-of select="//pubPlace"/></p>
+     <xhtml:p style="text-align:center;line-height:10%"> <xsl:value-of select="//pubPlace"/></xhtml:p>
 
-     <p style="text-align:center;line-height:10%"> <xsl:value-of select="//Editor"/></p>
+     <xhtml:p style="text-align:center;line-height:10%"> <xsl:value-of select="//Editor"/></xhtml:p>
 
-     <p style="text-align:center;line-height:10%"> <xsl:value-of select="//extent"/></p>
+     <xhtml:p style="text-align:center;line-height:10%"> <xsl:value-of select="//extent"/></xhtml:p>
 
-     <p style="text-align:center;line-height:10%"> <xsl:value-of select="//notesStmt"/></p>
+     <xhtml:p style="text-align:center;line-height:10%"> <xsl:value-of select="//notesStmt"/></xhtml:p>
 
-     <p style="text-align:center;line-height:10%"> <xsl:value-of select="//imprint"/></p>
+     <xhtml:p style="text-align:center;line-height:10%"> <xsl:value-of select="//imprint"/></xhtml:p>
    
 
      
     
-    </body>
-<pb/> 
+    </xhtml:body>
+<xhtml:pb/> 
     
-    </html>  
+    </xhtml:html>  
   
   
   
