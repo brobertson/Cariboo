@@ -1,8 +1,8 @@
 #!/bin/bash
-BINDIR="/home/ubuntu/Dropbox/Cariboo-Summer/bin"
+BINDIR="/home/ubuntu/Cariboo/bin"
 TMPDIR="/tmp"
-TEI2EPUBDIR="/home/ubuntu/Dropbox/Cariboo-Summer/tei2epub"
-COVERIMAGE="/home/ubuntu/Dropbox/Cariboo-Summer/Covers/Cariboo-cover.jpg"
+TEI2EPUBDIR=$BINDIR/tei2epub
+COVERIMAGE="/home/ubuntu/Cariboo/Covers/Cariboo-cover.jpg"
 short=$(basename $1)
 filename=${short%.*}
 extension=${short##*.}
@@ -21,7 +21,7 @@ java -classpath $BINDIR/lib -jar $BINDIR/transcoder-1.1-SNAPSHOT.jar -s $grecifi
 #$BINDIR/transcode_perseus_tei.sh $grecified $unicode
 echo "Converting from P4 TEI to P5..."
 xsltproc $BINDIR/p4top5.xsl $unicode > $p5
-echo "Creating EPUB Document..."
+echo "Creating EPUB Document $p5"
 $TEI2EPUBDIR/bin/tei2epub.py $p5 ${filename} 
 
 echo "Creating image for $1 from $2" 
