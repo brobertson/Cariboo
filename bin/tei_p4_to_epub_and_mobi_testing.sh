@@ -2,6 +2,7 @@
 BINDIR="/home/ubuntu/Cariboo/bin"
 TMPDIR="/tmp"
 TEI2EPUBDIR=$BINDIR/tei2epub
+#TEI2EPUBDIR=/media/sda3/Summer_Work_Tine/Summer_Work_Backup/Cariboo-Summer/tei2epub
 COVERIMAGE="/home/ubuntu/Cariboo/Covers/Cariboo-cover.jpg"
 short=$(basename $1)
 filename=${short%.*}
