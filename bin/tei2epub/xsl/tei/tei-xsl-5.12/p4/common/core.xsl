@@ -445,7 +445,7 @@
     </xsl:call-template>
   </xsl:when>
   <xsl:when test="@type='chap'">
-   <xsl:text>chapter </xsl:text>
+  <!-- <xsl:text>chapter </xsl:text>--> <xsl:value-of select="@type"/>
    <xsl:apply-templates/>
   </xsl:when>
   <xsl:when test="@type='issue'">

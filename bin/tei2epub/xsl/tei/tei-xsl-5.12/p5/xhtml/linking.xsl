@@ -488,7 +488,7 @@
             <xsl:attribute name="title">
               <xsl:choose>
                 <xsl:when test="starts-with(local-name(.),'div')">
-                  <xsl:value-of select="normalize-space(tei:head)"/>
+                  <xsl:value-of select="normalize-space(tei:head[2])"/><!--<xsl:value-of select="normalize-space(tei:head)"/>-->
                 </xsl:when>
                 <xsl:otherwise>
                   <xsl:value-of select="normalize-space(text())"/>

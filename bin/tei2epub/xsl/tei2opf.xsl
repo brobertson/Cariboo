@@ -31,9 +31,13 @@
             <xsl:when test="//tei:div[@type='part']">
               <xsl:apply-templates select="//tei:div[@type='part']" mode="item"/>
             </xsl:when>
+<!--	<xsl:when test="tei:head='book'">
+<xsl:apply-templates select="tei:head[@text()='book']" mode="item"/>
+</xsl:when>-->
             <xsl:otherwise>
               <!-- Otherwise just get all the flattened chapters -->
-              <xsl:apply-templates select="//tei:div[@type='chapter']" mode="item"/>
+          <xsl:apply-templates select="//tei:div[@type='chapter']" mode="item"/>
+<!--OPF37-item ref-->
             </xsl:otherwise>
           </xsl:choose>
 
@@ -47,9 +51,13 @@
             <xsl:when test="//tei:div[@type='part']">
               <xsl:apply-templates select="//tei:div[@type='part']" mode="spine"/>
             </xsl:when>
+<!--	<xsl:when test="tei:head='book'">
+<xsl:apply-templates select="tei:head[@text()='book']" mode="spine"/>
+</xsl:when>-->
             <xsl:otherwise>
               <!-- Otherwise just get all the flattened chapters -->
-              <xsl:apply-templates select="//tei:div[@type='chapter']" mode="spine"/>
+              <xsl:apply-templates select="//tei:div[@type='chapter']" mode="spine"/>-->
+<!--OPF53-spine ref-->
             </xsl:otherwise>
           </xsl:choose>
         </opf:spine>

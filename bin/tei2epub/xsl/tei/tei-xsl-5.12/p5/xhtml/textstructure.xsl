@@ -977,7 +977,7 @@ $requestedID: requests a particular page
     <xd:detail> </xd:detail>
   </xd:doc>
  <xsl:template name="doDivBody">
-    <xsl:param name="Type"/>
+    <xsl:param name="Type"/><!--WHAT IS THIS?Where is the value?-->
     <xsl:call-template name="startDivHook"/>
     <xsl:variable name="ident">
       <xsl:apply-templates mode="ident" select="."/>
@@ -986,14 +986,14 @@ $requestedID: requests a particular page
       <xsl:when test="parent::tei:div/@rend='multicol'">
         <td valign="top">
           <xsl:if test="not($Type = '')">
-            <xsl:element name="h{$Type + $divOffset}"><xsl:attribute name="hieverybody">xhtml989</xsl:attribute>TXTST989
+            <xsl:element name="h{$Type + $divOffset}"><xsl:attribute name="hieverybody">xhtml989</xsl:attribute>
               <xsl:if test="$xhtml='false'">
-                <a name="{$ident}"/><text>TXTST991</text>
+                <a name="{$ident}"/>
               </xsl:if>
               <xsl:call-template name="header">
-		<xsl:with-param name="display">full</xsl:with-param>TXTST994
+		<xsl:with-param name="display">full</xsl:with-param>
 	      </xsl:call-template>
-	      <xsl:call-template name="sectionHeadHook"/><text>TXTST996</text>
+	      <xsl:call-template name="sectionHeadHook"/>
             </xsl:element>
           </xsl:if>
           <xsl:apply-templates/>
@@ -1003,19 +1003,19 @@ $requestedID: requests a particular page
         <xsl:apply-templates select="*[not(local-name(.)='div')]"/>
         <table>
           <tr>
-            <xsl:apply-templates select="tei:div"/><text>TXTST1006</text>
+            <xsl:apply-templates select="tei:div"/>
           </tr>
         </table>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:if test="not($Type = '')">
+        <xsl:if test="not($Type = '')"><!-- and parent::tei:div/@type='episode'-->
 	
-          <xsl:element name="h{$Type + $divOffset}"><xsl:attribute name="class">shouldIhide-<xsl:value-of select="tei:head"/></xsl:attribute><text>TXTST1013</text>
+          <xsl:element name="h{$Type + $divOffset}"><xsl:attribute name="class">shouldIhide-<xsl:value-of select="tei:head"/></xsl:attribute>
             <xsl:if test="$xhtml='false'">
-              <a name="{$ident}"/><text>TXTST1015</text>
+              <a name="{$ident}"/>
             </xsl:if>
             <xsl:call-template name="header">
-	      <xsl:with-param name="display">full</xsl:with-param><text>TXTST1018</text>
+	      <xsl:with-param name="display">full</xsl:with-param>
 	    </xsl:call-template>
 	    <xsl:call-template name="sectionHeadHook"/>
           </xsl:element>

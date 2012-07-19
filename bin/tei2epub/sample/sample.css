@@ -1,6 +1,6 @@
 @namespace h "http://www.w3.org/1999/xhtml";
 body { 
-  /*I am a banana!!!*/
+  
   margin-right: 2em;
 }
 p { 
@@ -44,15 +44,15 @@ img.cover {
 }
 /*Hide heading*/
 
-*[class^='shouldIhide-'] {
+/**[class^='shouldIhide-'] {
 	display:none;
 }
-*[class*='shouldIhide-book']   {
+ *[class*='shouldIhide-book']   {
 	display:block;
 }
-*[class*='shouldIhide-chapter']   {
+ *[class*='shouldIhide-chapter']   {
 	display:block;
 }
 *[class*='shouldIhide-speech']   {
 	display:block;
-}
+}*/

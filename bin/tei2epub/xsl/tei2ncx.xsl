@@ -66,22 +66,11 @@
       </xsl:for-each>
     </xsl:variable>
 
-<xsl:choose>
-<xsl:when test="tei:title!=''">
-<navPoint id="{concat('navpoint-', $abspos)}" playOrder="{$abspos}">
-      <navLabel>
-        <text><xsl:value-of select="tei:title"/></text>
-      </navLabel>
-      <content src="{$chapter-file}" />
-      <xsl:apply-templates select="tei:div[@type='chapter']" />
-    </navPoint>
-</xsl:when>
-<xsl:otherwise>
 
 <xsl:if test="tei:head/text()='book'">
     <navPoint id="{concat('navpoint-', $abspos)}" playOrder="{$abspos}">
       <navLabel>
-        <text><xsl:value-of select="tei:head"/> <xsl:number value="position()"/></text>
+        <text><xsl:value-of select="tei:head[2]"/></text>
       </navLabel>
       <content src="{$chapter-file}" />
       <xsl:apply-templates select="tei:div[@type='chapter']" />
@@ -105,8 +94,7 @@
       <xsl:apply-templates select="tei:div[@type='chapter']" />
     </navPoint>
 </xsl:if>
-</xsl:otherwise>
-</xsl:choose>
+
   </xsl:template>
 
   <!-- A bug in Digital Editions means that if multiple tei:heads exist for a given chapter and TEI

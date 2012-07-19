@@ -10,13 +10,11 @@
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml">
 <link href="stylesheet.css" type="text/css" rel="stylesheet"/>
-      <!--<head>
+      <head>
         <title><xsl:value-of select="(//xhtml:h2)[1]" /></title>
-      </head>-->
-      <body>
-<head>
-        <xsl:value-of select="tei:title" />
       </head>
+      <body>
+
         <xsl:apply-templates />
       </body>
     </html>

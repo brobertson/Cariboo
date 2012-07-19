@@ -153,10 +153,10 @@
       <xsl:choose>
         <xsl:when test="local-name(.) = 'TEI' or local-name(.)='TEI.2'">
           <xsl:apply-templates
-            select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>LINK156
+            select="tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title"/>
         </xsl:when>
         <xsl:when test="not(tei:head) and @n">
-          <xsl:value-of select="@n"/>LINK159
+          <xsl:value-of select="@n"/>
         </xsl:when>
         <xsl:when test="not($toc='')">
           <xsl:call-template name="makeInternalLink">
@@ -174,7 +174,7 @@
                   <xsl:call-template name="autoMakeHead"/>
                 </xsl:when>
                 <xsl:otherwise>
-		  <xsl:for-each select="tei:title">LINK177<!--tei:head-->
+		  <xsl:for-each select="tei:head[2]"><!--<xsl:for-each select="tei:head">-->
 		    <xsl:apply-templates mode="plain"/>
 		  </xsl:for-each>
                 </xsl:otherwise>
@@ -183,20 +183,20 @@
           </xsl:call-template>
         </xsl:when>
         <xsl:when test="$autoHead='true'">
-          <xsl:call-template name="autoMakeHead"/>LINK186
+          <xsl:call-template name="autoMakeHead"/>
         </xsl:when>
         <xsl:when test="$display='plain'">
-          <xsl:for-each select="tei:title">LINK189<!--tei:head-->
+          <xsl:for-each select="tei:head[2]"><!--<xsl:for-each select="tei:head">-->
 	    <xsl:apply-templates mode="plain"/>
 	  </xsl:for-each>
         </xsl:when>
         <xsl:when test="$display='simple'">
-         <xsl:for-each select="tei:title">LINK194<!--tei:head-->
+         <xsl:for-each select="tei:head[2]"><!--<xsl:for-each select="tei:head">-->
 	    <xsl:apply-templates mode="plain"/>
 	  </xsl:for-each>
         </xsl:when>
         <xsl:otherwise>
-          <xsl:for-each select="tei:title">LINK195<!--tei:head-->
+          <xsl:for-each select="tei:head[2]"><!--<xsl:for-each select="tei:head">-->
 	    <xsl:apply-templates/>
 	  </xsl:for-each>
         </xsl:otherwise>-->
@@ -229,17 +229,17 @@
     <xsl:variable name="Text">
       <xsl:call-template name="header">
         <xsl:with-param name="minimal" select="$minimalCrossRef"/>
-	<xsl:with-param name="display">plain</xsl:with-param>LINK232
+	<xsl:with-param name="display">plain</xsl:with-param>
       </xsl:call-template>
     </xsl:variable>
     <xsl:choose>
       <xsl:when test="$Text=''">
         <xsl:text>&lt;</xsl:text>
-        <xsl:value-of select="local-name(.)"/>LINK238
+        <xsl:value-of select="local-name(.)"/>
         <xsl:text>&gt;</xsl:text>
       </xsl:when>
       <xsl:otherwise>
-       <xsl:copy-of select="$Text"/>LINK242
+       <xsl:copy-of select="$Text"/>
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
