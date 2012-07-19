@@ -1,7 +1,7 @@
 @namespace h "http://www.w3.org/1999/xhtml";
 body { 
   
-  margin-right: 2em;
+ 
 }
 p { 
   line-height: 1.2 em 
@@ -16,7 +16,6 @@ h1.part, h2.subtitle {
 }
 .linenum  {
    float: right;
-   margin-right: -2em;
    font-size: 0.8em;
    color: #999;
    font-style: italic;
