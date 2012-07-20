@@ -620,8 +620,8 @@
   <xsl:template match="tei:l">
 <div class="l">
 <xsl:if test="@n">
-[<span class="linenum">]
-<xsl:value-of select="@n"/>
+<span class="linenum">
+[<xsl:value-of select="@n"/>]
  </span>
 </xsl:if>
 <xsl:apply-templates/>
