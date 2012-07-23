@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!DOCTYPE catalog
+   PUBLIC "-//OASIS/DTD Entity Resolution XML Catalog V1.0//EN"
+   "http://www.oasis-open.org/committees/entity/release/1.0/catalog.dtd"> 
+<catalog  xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">  
+  <group  prefer="public"  xml:base="file:///home/ubuntu/Cariboo/bin/lib/Dtds/" >  
+        <!--public 
+            publicId="-//TEI P4//DTD Main DTD Driver File//EN"  
+            uri="tei2.dtd"/>
+        <public 
+	    publicId="-//Perseus P4//DTD Perseus Verse//EN"
+	    uri="PersVerse.dtd"/>
+	<public 
+	    publicId="-//Perseus P4//DTD Perseus Drama//EN"
+	    uri="PersDrama.dtd" />
+	<public
+	    publicId="-//Perseus P4//DTD Perseus Prose//EN"
+	    uri="PersProse.dtd" />
+        <public 
+	    publicId="-//Perseus P4//DTD Perseus TEI Common Declarations//EN"
+	    uri="PersTeiCommon.dtd" />
+        <public 
+	    publicId="-//TEI P4//ENTITIES Generic Identifiers//EN"
+	    uri="teigis2.ent" />
+        <public
+	    publicId="-//Perseus P4//DTD Perseus TEI extensions//EN"
+	    uri="PersTeiExt.dtd"/>
+        <public
+	   publicId="-//Perseus P4//DTD Perseus TEI header//EN"
+	   uri="PersTeiHead.dtd" />
+        <public
+	   publicId="-//Perseus P4//ENTITIES Perseus Character Entities//EN//XML"
+	   uri="PersXML.ent"/-->
+        <!--system
+	    systemId="http://www.oasis-open.org/docbook/xmlcharent/0.3/iso-lat1.ent"
+         /-->
+        <rewriteSystem 
+		systemStartString="http://www.oasis-open.org/docbook/xmlcharent/0.3/" 
+		rewritePrefix=""
+        />   
+         <rewriteURI 
+                uriStartString="http://www.oasis-open.org/docbook/xmlcharent/0.3/" 
+                rewritePrefix=""
+        />
+        <rewriteSystem
+ 	       systemStartString="http://www.perseus.tufts.edu/DTD/1.0/"
+	rewritePrefix=""
+	/>
+	<rewriteURI
+               uriStartString="http://www.perseus.tufts.edu/DTD/1.0/"
+        rewritePrefix=""
+        />	<!--system
+            systemId="http://www.oasis-open.org/docbook/xml/4.2/docbookx.dtd"  
+            uri="docbook42/docbookx.dtd"/>
+
+        <system
+            systemId="docbook4.2.dtd"    
+            uri="docbook42/docbookx.dtd"/-->
+  </group>
+</catalog>
