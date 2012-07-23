@@ -6,12 +6,18 @@ TEI2EPUBBUILD=/tmp/tei2epubBuild
 #TEI2EPUBDIR=/media/sda3/Summer_Work_Tine/Summer_Work_Backup/Cariboo-Summer/tei2epub
 COVERIMAGE="/home/ubuntu/Cariboo/Covers/Cariboo-cover.jpg"
 XML_CATALOG_FILES="/home/ubuntu/Cariboo/bin/lib/xmlcatalog.xml"
+
+while [ $# -ne 0 ]
+do
+echo "Processing File $#: $1 ..."
 echo "Replacing '.' in original filename..."
-cleanname=${1/./_}
+cleanname=${1//./_}
 short=$(basename $cleanname)
 filename=${short%.*}
 extension=${short##*.}
+if [ ! -d $TEI2EPUBBUILD ]; then
 mkdir $TEI2EPUBBUILD
+fi
 echo "Converting $cleanname to epub document ./$filename.epub"
 #echo $short
 #echo $filename
@@ -29,6 +35,7 @@ echo "Converting from P4 TEI to P5..."
 XML_CATALOG_FILES=$XML_CATALOG_FILES xsltproc $BINDIR/p4top5.xsl $unicode > $p5
 echo "Creating EPUB Document $p5"
 PATH=$PATH:$BINDIR $TEI2EPUBDIR/bin/tei2epub.py $p5 ${filename} 
+rm -rf $TEI2EPUBBUILD/${filename}
 mv ${filename}.epub $TEI2EPUBBUILD/${filename}.epub
 echo "Creating image for $cleanname" 
 echo "Grabbing author and title from xml..."
@@ -58,3 +65,5 @@ rm -rf $TEI2EPUBBUILD/${filename}
 #echo "Creating MOBI Document..."
 #ebook-convert $TEI2EPUBBUILD/${filename}.epub $TEI2EPUBBUILD/${filename}.mobi
 echo "Done conversion of $1"
+shift 
+done
