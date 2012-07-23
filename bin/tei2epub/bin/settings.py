@@ -21,7 +21,8 @@ HTMLFRAG2HTML_XSLT = '%s/htmlfrag2html.xsl' % XSLT_DIR
 DIST = '%s/../dist' % path
 
 # Working directory
-BUILD = '%s/../build' % path
+BUILD = '/tmp/tei2epubBuild'# % path 
+#BUILD = '%s/../build' % path
 
 # Configuration specific to your TEI types (div1 = top-level division, div2 = 2nd level division)
 # @todo Note that if you modify these values you will need to make corresponding changes in the XSL
