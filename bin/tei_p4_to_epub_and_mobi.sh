@@ -1,11 +1,11 @@
 #!/bin/bash
-BINDIR="/home/ubuntu/Cariboo/bin"
+BINDIR="~/Cariboo/bin"
 TMPDIR="/tmp"
 TEI2EPUBDIR=$BINDIR/tei2epub
 TEI2EPUBBUILD=/tmp/tei2epubBuild
 #TEI2EPUBDIR=/media/sda3/Summer_Work_Tine/Summer_Work_Backup/Cariboo-Summer/tei2epub
-COVERIMAGE="/home/ubuntu/Cariboo/Covers/Cariboo-cover.jpg"
-XML_CATALOG_FILES="/home/ubuntu/Cariboo/bin/lib/xmlcatalog.xml"
+COVERIMAGE="~/Cariboo/Covers/Cariboo-cover.jpg"
+XML_CATALOG_FILES="~/Cariboo/bin/lib/xmlcatalog.xml"
 
 while [ $# -ne 0 ]
 do
@@ -19,18 +19,13 @@ if [ ! -d $TEI2EPUBBUILD ]; then
 mkdir $TEI2EPUBBUILD
 fi
 echo "Converting $cleanname to epub document ./$filename.epub"
-#echo $short
-#echo $filename
-#echo $extension
 grecified=$TMPDIR/${filename}_gr_1.xml
 unicode=$TMPDIR/${filename}_gr_unic_2.xml
 p5=$TMPDIR/${filename}_gr_unic_p5_3.xml
 epub=$TMPDIR/${filename}.epub
 echo "Generating unicode TEI..."
-#perl -pe 's/<body>/<body lang="grc">/' $1 > $grecified
 XML_CATALOG_FILES=$XML_CATALOG_FILES xsltproc  $BINDIR/grecify.xsl $1 > $grecified
 java -classpath $BINDIR/lib -jar $BINDIR/transcoder-1.1-SNAPSHOT.jar -s $grecified -o ${unicode} -se BetaCode -oe UnicodeC
-#$BINDIR/transcode_perseus_tei.sh $grecified $unicode
 echo "Converting from P4 TEI to P5..."
 XML_CATALOG_FILES=$XML_CATALOG_FILES xsltproc $BINDIR/p4top5.xsl $unicode > $p5
 echo "Creating EPUB Document $p5"
@@ -62,6 +57,10 @@ cp $TMPDIR/${filename}_chapter-01.html $TEI2EPUBBUILD/${filename}/OEBPS/chapter-
 echo "Recompressing epub archive ..."
 PATH=$PATH:$BINDIR $BINDIR/epub-me $TEI2EPUBBUILD/${filename} 
 rm -rf $TEI2EPUBBUILD/${filename}
+echo "Deleting temp files ..."
+rm $grecified
+rm $unicode
+rm $p5
 #echo "Creating MOBI Document..."
 #ebook-convert $TEI2EPUBBUILD/${filename}.epub $TEI2EPUBBUILD/${filename}.mobi
 echo "Done conversion of $1"
