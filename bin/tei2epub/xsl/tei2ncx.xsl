@@ -67,6 +67,7 @@
     </xsl:variable>
 
 <xsl:choose>
+
 <xsl:when test="tei:head[2]!=''">
     <navPoint id="{concat('navpoint-', $abspos)}" playOrder="{$abspos}">
       <navLabel>
@@ -86,9 +87,8 @@
       <xsl:apply-templates select="tei:div[@type='chapter']" />
     </navPoint>
 </xsl:when>
-</xsl:choose>
 
-<xsl:if test="tei:head/text()='chapter'">
+<xsl:when test="tei:head/text()='chapter'">
      <navPoint id="{concat('navpoint-', $abspos)}" playOrder="{$abspos}">
       <navLabel>
         <text>Chapter <xsl:number value="position()"/></text>
@@ -96,7 +96,11 @@
       <content src="{$chapter-file}" />
       <xsl:apply-templates select="tei:div[@type='chapter']" />
     </navPoint>
-</xsl:if>
+</xsl:when>
+
+</xsl:choose>
+
+
 <xsl:if test="tei:head/text()='speech'">
     <navPoint id="{concat('navpoint-', $abspos)}" playOrder="{$abspos}">
       <navLabel>
