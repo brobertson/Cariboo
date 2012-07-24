@@ -66,10 +66,6 @@
       </xsl:for-each>
     </xsl:variable>
 
-<xsl:variable name="nextNode">
-<xsl:value-of select="local-name(following-sibling::*[1])"/>
-</xsl:variable>
-
 <xsl:choose>
 <xsl:when test="tei:head[2]!=''">
     <navPoint id="{concat('navpoint-', $abspos)}" playOrder="{$abspos}">
