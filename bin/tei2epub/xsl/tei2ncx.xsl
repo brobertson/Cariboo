@@ -66,8 +66,12 @@
       </xsl:for-each>
     </xsl:variable>
 
+<xsl:variable name="nextNode">
+<xsl:value-of select="local-name(following-sibling::*[1])"/>
+</xsl:variable>
 
-<xsl:if test="tei:head/text()='book'">
+<xsl:choose>
+<xsl:when test="tei:head[2]!=''">
     <navPoint id="{concat('navpoint-', $abspos)}" playOrder="{$abspos}">
       <navLabel>
         <text><xsl:value-of select="tei:head[2]"/></text>
@@ -75,7 +79,19 @@
       <content src="{$chapter-file}" />
       <xsl:apply-templates select="tei:div[@type='chapter']" />
     </navPoint>
-</xsl:if>
+</xsl:when>
+
+<xsl:when test="tei:head/text()='book'">
+    <navPoint id="{concat('navpoint-', $abspos)}" playOrder="{$abspos}">
+      <navLabel>
+         <text>Book <xsl:number value="position()"/></text>
+      </navLabel>
+      <content src="{$chapter-file}" />
+      <xsl:apply-templates select="tei:div[@type='chapter']" />
+    </navPoint>
+</xsl:when>
+</xsl:choose>
+
 <xsl:if test="tei:head/text()='chapter'">
      <navPoint id="{concat('navpoint-', $abspos)}" playOrder="{$abspos}">
       <navLabel>
