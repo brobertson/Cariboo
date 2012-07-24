@@ -4,7 +4,7 @@
   <xsl:template match="/">
     <html xmlns="http://www.w3.org/1999/xhtml">
     <body>
-     <h1> -Metadata Flyleaf- </h1>
+     <h1 text-align="center"> -Metadata Flyleaf- </h1>
      <p> <xsl:value-of select="//title"/>, <xsl:value-of select="//author"/></p>
      <p> <xsl:value-of select="//publisher"/></p>
      <p> <xsl:value-of select="//date"/></p>
