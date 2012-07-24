@@ -627,12 +627,13 @@
 <xsl:apply-templates/>
 </div>
   </xsl:template>
+<!--These milestone sections affect the line numbering in the document.-->
   <xd:doc>
 <xd:short>Process elements tei:milestone section</xd:short>
     <xd:detail> </xd:detail>
   </xd:doc>
  <xsl:template match="tei:milestone[@unit='section']">
-<span class="prosenum">  [<xsl:value-of select="@n"/>] </span> 
+<span class="prosenum"><xsl:value-of select="@n"/></span> 
 <xsl:apply-templates/>
   </xsl:template>
   <xd:doc>
@@ -641,7 +642,7 @@
   </xd:doc>
  <xsl:template match="tei:milestone[@unit='chapter']">
 <p/>
-<span class="boldnum">  [<xsl:value-of select="@n"/>] </span> 
+<span class="prosenum">  <xsl:value-of select="@n"/>.</span> 
 <xsl:apply-templates/>
   </xsl:template>
 <xd:doc>
