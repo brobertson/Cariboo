@@ -25,6 +25,12 @@ h1.part, h2.subtitle {
    color: #999;
    font-style: italic;
    }
+.boldnum   [
+   font-size: 0.8em;
+   color: #333;
+   font-style: italic;
+   font-weight: bold;
+}
 /*Cover*/
 body.cover {
 	margin: 0;
