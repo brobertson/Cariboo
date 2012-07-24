@@ -43,9 +43,9 @@ XML_CATALOG_FILES=$XML_CATALOG_FILES author=`XML_CATALOG_FILES=$XML_CATALOG_FILE
 XML_CATALOG_FILES=$XML_CATALOG_FILES title=`XML_CATALOG_FILES=$XML_CATALOG_FILES xsltproc $BINDIR/title.xsl $1 | tail -1`;
 title=${title/Machine readable text/}  
 echo "Now making image..."
-convert "$COVERIMAGE" -font Helvetica-Bold -fill black -pointsize 30 -annotate +44+460 "$author" $TMPDIR/${filename}_cover_temp.jpg
-convert -background white -fill black -font Helvetica-BoldOblique -pointsize 30 -size 320x -gravity West caption:"$title" $TMPDIR/${filename}_title_temp.jpg
-convert -composite $TMPDIR/${filename}_cover_temp.jpg $TMPDIR/${filename}_title_temp.jpg -geometry +43+472 $TMPDIR/${filename}_cover.jpg
+convert "$COVERIMAGE" -font Helvetica -fill black -pointsize 100 -annotate +44+900 "$author" $TMPDIR/${filename}_cover_temp.jpg
+convert -background '#D8DC10' -fill black -font Helvetica-Oblique -pointsize 100 -size 800x -gravity West caption:"$title" $TMPDIR/${filename}_title_temp.jpg
+convert -composite $TMPDIR/${filename}_cover_temp.jpg $TMPDIR/${filename}_title_temp.jpg -geometry +43+972 $TMPDIR/${filename}_cover.jpg
 rm $TMPDIR/${filename}_title_temp.jpg
 rm $TMPDIR/${filename}_cover_temp.jpg
 echo "Uncompressing Epub for modification ..."
