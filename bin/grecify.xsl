@@ -23,8 +23,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:attribute name="lang">grc</xsl:attribute>
 </xsl:template>
 
-<xsl:template match="note">
-  <xsl:element name="note">
+<xsl:template match="note | bibl">
+  <xsl:element name="{name(.)}">
    <xsl:attribute name="lang">eng</xsl:attribute>
    <xsl:apply-templates select="./@*"/>
    <xsl:apply-templates />
