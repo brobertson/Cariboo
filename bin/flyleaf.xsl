@@ -6,7 +6,7 @@
     <html xmlns="http://www.w3.org/1999/xhtml">
     <body><center>
      <h1> -Metadata Flyleaf- </h1>
-     <p> <xsl:value-of select="//title"/>, <xsl:value-of select="//author"/></p>
+     <p> <xsl:value-of select="//author"/>, <xsl:value-of select="//title"/></p>
      <p> <xsl:value-of select="//publisher"/></p>
      <p> <xsl:value-of select="//date"/></p>
      <p> <xsl:value-of select="//pubPlace"/></p>
@@ -14,7 +14,7 @@
      <p> <xsl:value-of select="//extent"/></p>
      <p> <xsl:value-of select="//notesStmt"/></p>
      <p> <xsl:value-of select="//imprint"/></p>
-     <p> -Source Document Taken from The Perseus Project-</p>
+     <p> -Source Document Taken from The Perseus Project- </p>
     </center></body>
     </html>  
   
