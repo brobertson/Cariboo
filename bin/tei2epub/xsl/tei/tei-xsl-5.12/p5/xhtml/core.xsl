@@ -641,7 +641,7 @@
   </xd:doc>
  <xsl:template match="tei:milestone[@unit='chapter']">
 <p/>
-<span class="prosenum">  [<xsl:value-of select="@n"/>] </span> 
+<span class="boldnum">  [<xsl:value-of select="@n"/>] </span> 
 <xsl:apply-templates/>
   </xsl:template>
 <xd:doc>
