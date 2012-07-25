@@ -44,7 +44,7 @@ XML_CATALOG_FILES=$XML_CATALOG_FILES title=`XML_CATALOG_FILES=$XML_CATALOG_FILES
 title=${title/Machine readable text/}  
 echo "Now making image..."
 convert "$COVERIMAGE" -font Helvetica -fill black -pointsize 100 -annotate +44+900 "$author" $TMPDIR/${filename}_cover_temp.jpg
-convert -background '#D8DC10' -fill black -font Helvetica-Oblique -pointsize 100 -size 800x -gravity West caption:"$title" $TMPDIR/${filename}_title_temp.jpg
+convert -background '#BB9E26' -fill black -font Helvetica-Oblique -pointsize 100 -size 890x -gravity West caption:"$title" $TMPDIR/${filename}_title_temp.jpg
 convert -composite $TMPDIR/${filename}_cover_temp.jpg $TMPDIR/${filename}_title_temp.jpg -geometry +43+972 $TMPDIR/${filename}_cover.jpg
 rm $TMPDIR/${filename}_title_temp.jpg
 rm $TMPDIR/${filename}_cover_temp.jpg
