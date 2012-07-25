@@ -4,7 +4,7 @@
   <xsl:if test="//title=''"> 
     <xsl:value-of select="Untitled"/>
   </xsl:if>
-  <xsl:value-of select="//title"/>
+  <xsl:value-of select="//title[not(@type='sub')]"/>
 </xsl:template>
 <!--xsl:template match="title[@type='sub']">
 </xsl:template-->
