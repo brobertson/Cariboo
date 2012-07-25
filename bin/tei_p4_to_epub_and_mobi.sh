@@ -1,11 +1,11 @@
 #!/bin/bash
-BINDIR="~/Cariboo/bin"
+BINDIR="$HOME/Cariboo/bin"
 TMPDIR="/tmp"
 TEI2EPUBDIR=$BINDIR/tei2epub
 TEI2EPUBBUILD=/tmp/tei2epubBuild
 #TEI2EPUBDIR=/media/sda3/Summer_Work_Tine/Summer_Work_Backup/Cariboo-Summer/tei2epub
-COVERIMAGE="~/Cariboo/Covers/Cariboo-cover.jpg"
-XML_CATALOG_FILES="~/Cariboo/bin/lib/xmlcatalog.xml"
+COVERIMAGE="$HOME/Cariboo/Covers/Cariboo-cover.jpg"
+XML_CATALOG_FILES="$HOME/Cariboo/bin/lib/xmlcatalog.xml"
 
 while [ $# -ne 0 ]
 do
