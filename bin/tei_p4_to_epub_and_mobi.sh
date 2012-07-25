@@ -3,7 +3,6 @@ BINDIR="$HOME/Cariboo/bin"
 TMPDIR="/tmp"
 TEI2EPUBDIR=$BINDIR/tei2epub
 TEI2EPUBBUILD=/tmp/tei2epubBuild
-#TEI2EPUBDIR=/media/sda3/Summer_Work_Tine/Summer_Work_Backup/Cariboo-Summer/tei2epub
 COVERIMAGE="$HOME/Cariboo/Covers/Cariboo-cover.jpg"
 XML_CATALOG_FILES="$HOME/Cariboo/bin/lib/xmlcatalog.xml"
 
@@ -12,6 +11,7 @@ do
 echo "Processing File $#: $1 ..."
 echo "Replacing '.' in original filename..."
 cleanname=${1//./_}
+cleanname=${cleanname/_xml/}
 short=$(basename $cleanname)
 filename=${short%.*}
 extension=${short##*.}
@@ -61,8 +61,6 @@ echo "Deleting temp files ..."
 rm $grecified
 rm $unicode
 rm $p5
-#echo "Creating MOBI Document..."
-#ebook-convert $TEI2EPUBBUILD/${filename}.epub $TEI2EPUBBUILD/${filename}.mobi
 echo "Done conversion of $1"
 shift 
 done
