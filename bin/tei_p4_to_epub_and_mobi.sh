@@ -34,9 +34,11 @@ rm -rf $TEI2EPUBBUILD/${filename}
 mv ${filename}.epub $TEI2EPUBBUILD/${filename}.epub
 echo "Creating image for $cleanname" 
 echo "Grabbing author and title from xml..."
-XML_CATALOG_FILES=$XML_CATALOG_FILES author=`XML_CATALOG_FILES=$XML_CATALOG_FILES xsltproc $BINDIR/author.xsl $1 | tail -1`; 
-XML_CATALOG_FILES=$XML_CATALOG_FILES title=`XML_CATALOG_FILES=$XML_CATALOG_FILES xsltproc $BINDIR/title.xsl $1 | tail -1`;
+XML_CATALOG_FILES=$XML_CATALOG_FILES author=`XML_CATALOG_FILES=$XML_CATALOG_FILES xsltproc $BINDIR/author.xsl $1 | head -2 | tail -1`; 
+XML_CATALOG_FILES=$XML_CATALOG_FILES title=`XML_CATALOG_FILES=$XML_CATALOG_FILES xsltproc $BINDIR/title.xsl $1 | head -2 | tail -1`;
 title=${title/Machine readable text/}  
+echo "title: '$title'"
+echo "author: '$author'"
 echo "Now making image..."
 convert "$COVERIMAGE" -font Helvetica -fill black -pointsize 100 -annotate +44+900 "$author" $TMPDIR/${filename}_cover_temp.jpg
 convert -background '#BB9E26' -fill black -font Helvetica-Oblique -pointsize 100 -size 890x -gravity West caption:"$title" $TMPDIR/${filename}_title_temp.jpg
@@ -58,9 +60,9 @@ echo "Recompressing epub archive ..."
 PATH=$PATH:$BINDIR $BINDIR/epub-me $TEI2EPUBBUILD/${filename} 
 rm -rf $TEI2EPUBBUILD/${filename}
 echo "Deleting temp files ..."
-rm $grecified
-rm $unicode
-rm $p5
+#rm $grecified
+#rm $unicode
+#rm $p5
 echo "Done conversion of $1"
 shift 
 done
