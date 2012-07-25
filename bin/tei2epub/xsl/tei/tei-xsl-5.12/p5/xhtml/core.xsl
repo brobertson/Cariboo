@@ -627,13 +627,21 @@
 <xsl:apply-templates/>
 </div>
   </xsl:template>
-<!--These milestone sections affect the line numbering in the document.-->
+<!--These milestone sections affect the numbering in prose and verse in the document.-->
   <xd:doc>
 <xd:short>Process elements tei:milestone section</xd:short>
     <xd:detail> </xd:detail>
   </xd:doc>
  <xsl:template match="tei:milestone[@unit='section']">
 <span class="prosenum"><xsl:value-of select="@n"/></span> 
+<xsl:apply-templates/>
+  </xsl:template>
+<!--do not include milestone tags where n=hypothesis-->
+<xd:doc>
+<xd:short>Process elements tei:milestone hypothesis</xd:short>
+    <xd:detail> </xd:detail>
+  </xd:doc>
+ <xsl:template match="tei:milestone[@n='hypothesis']">
 <xsl:apply-templates/>
   </xsl:template>
   <xd:doc>
