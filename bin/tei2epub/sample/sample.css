@@ -25,9 +25,9 @@ h1.part, h2.subtitle {
    color: #999;
    font-style: italic;
    }
-.boldnum   [
+.boldnum   {
    font-size: 0.8em;
-   color: #333;
+   color: #666;
    font-style: italic;
    font-weight: bold;
 }
@@ -47,17 +47,3 @@ p.cover {
 img.cover {
 	height: 100%;
 }
-/*Hide heading*/
-
-/**[class^='shouldIhide-'] {
-	display:none;
-}
- *[class*='shouldIhide-book']   {
-	display:block;
-}
- *[class*='shouldIhide-chapter']   {
-	display:block;
-}
-*[class*='shouldIhide-speech']   {
-	display:block;
-}*/

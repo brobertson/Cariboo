@@ -174,7 +174,7 @@
                   <xsl:call-template name="autoMakeHead"/>
                 </xsl:when>
                 <xsl:otherwise>
-		  <xsl:for-each select="tei:head[2]"><!--<xsl:for-each select="tei:head">-->
+		  <xsl:for-each select="tei:head">
 		    <xsl:apply-templates mode="plain"/>
 		  </xsl:for-each>
                 </xsl:otherwise>
@@ -186,20 +186,38 @@
           <xsl:call-template name="autoMakeHead"/>
         </xsl:when>
         <xsl:when test="$display='plain'">
-          <xsl:for-each select="tei:head[2]"><!--<xsl:for-each select="tei:head">-->
+          <xsl:for-each select="tei:head">
 	    <xsl:apply-templates mode="plain"/>
 	  </xsl:for-each>
         </xsl:when>
         <xsl:when test="$display='simple'">
-         <xsl:for-each select="tei:head[2]"><!--<xsl:for-each select="tei:head">-->
+         <xsl:for-each select="tei:head">
 	    <xsl:apply-templates mode="plain"/>
 	  </xsl:for-each>
         </xsl:when>
-        <xsl:otherwise>
-          <xsl:for-each select="tei:head[2]"><!--<xsl:for-each select="tei:head">-->
-	    <xsl:apply-templates/>
-	  </xsl:for-each>
-        </xsl:otherwise>-->
+
+        <xsl:otherwise><!--here is where we can edit the heading text-->
+<!--if a chapter,book or speech heading followed by a head sibling exists, 
+the second heading is selected and displayed-->
+<xsl:if test="tei:head/text()='chapter'">   
+ <xsl:for-each select="tei:head[2]">
+	<xsl:apply-templates/>
+	 </xsl:for-each>
+	</xsl:if>
+
+<xsl:if test="tei:head/text()='book'">   
+ <xsl:for-each select="tei:head[2]">
+	<xsl:apply-templates/>
+	 </xsl:for-each>
+	</xsl:if>
+
+<xsl:if test="tei:head/text()='speech'">   
+ <xsl:for-each select="tei:head[2]">
+	<xsl:apply-templates/>
+	 </xsl:for-each>
+	</xsl:if>
+
+        </xsl:otherwise>
      </xsl:choose>
     </xsl:if>
   </xsl:template>
