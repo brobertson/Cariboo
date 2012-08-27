@@ -16,9 +16,9 @@
         <opf:metadata>
           <dc:title><xsl:apply-templates select="//tei:titleStmt/tei:title" /></dc:title>
           <dc:creator><xsl:apply-templates select="//tei:titleStmt/tei:author" /></dc:creator>
-          <dc:language xsi:type="dcterms:RFC3066">en-US</dc:language> 
+          <dc:language xsi:type="dcterms:RFC3066">gk</dc:language> 
           <dc:rights>Public Domain</dc:rights>
-          <dc:publisher>threepress.org</dc:publisher>
+          <dc:publisher>Mount Allison Classics Department and the Perseus Project</dc:publisher>
           <dc:identifier id="bookid">urn:uuid:<xsl:value-of select="/tei:TEI/@xml:id"/></dc:identifier>
         </opf:metadata>
         <opf:manifest>
@@ -31,9 +31,6 @@
             <xsl:when test="//tei:div[@type='part']">
               <xsl:apply-templates select="//tei:div[@type='part']" mode="item"/>
             </xsl:when>
-<!--	<xsl:when test="tei:head='book'">
-<xsl:apply-templates select="tei:head[@text()='book']" mode="item"/>
-</xsl:when>-->
             <xsl:otherwise>
               <!-- Otherwise just get all the flattened chapters -->
           <xsl:apply-templates select="//tei:div[@type='chapter']" mode="item"/>
@@ -51,9 +48,6 @@
             <xsl:when test="//tei:div[@type='part']">
               <xsl:apply-templates select="//tei:div[@type='part']" mode="spine"/>
             </xsl:when>
-<!--	<xsl:when test="tei:head='book'">
-<xsl:apply-templates select="tei:head[@text()='book']" mode="spine"/>
-</xsl:when>-->
             <xsl:otherwise>
               <!-- Otherwise just get all the flattened chapters -->
               <xsl:apply-templates select="//tei:div[@type='chapter']" mode="spine"/>-->
