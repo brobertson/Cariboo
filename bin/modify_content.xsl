@@ -12,6 +12,7 @@
 	</xsl:template>
         <xsl:template match="opf:manifest">
 		<opf:manifest>
+			<opf:item id="epub.embedded.font" href="replacement_font.otf" media-type="font/opentype"/>
 			<opf:item id="cover.jpg" href="cover.jpg" media-type="image/jpeg" />
 			<opf:item id="chapter-00" href="chapter-00.html" media-type="application/xhtml+xml"/>
    			<opf:item id="chapter-01" href="chapter-01.html" media-type="application/xhtml+xml"/>

@@ -54,6 +54,7 @@ XML_CATALOG_FILES=$XML_CATALOG_FILES xsltproc $BINDIR/flyleaf.xsl $1 > $TMPDIR/$
 echo "Putting new content in epub filestructure ..." 
 cp $TMPDIR/${filename}_new_content.opf $TEI2EPUBBUILD/${filename}/OEBPS/content.opf
 cp $TMPDIR/${filename}_cover.jpg $TEI2EPUBBUILD/${filename}/OEBPS/cover.jpg
+cp $HOME/Cariboo/Covers/replacement_font.otf $TEI2EPUBBUILD/${filename}/OEBPS/replacement_font.otf
 cp $BINDIR/lib/EpubFiles/* $TEI2EPUBBUILD/${filename}/OEBPS/
 cp $TMPDIR/${filename}_chapter-01.html $TEI2EPUBBUILD/${filename}/OEBPS/chapter-01.html
 echo "Recompressing epub archive ..."
