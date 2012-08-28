@@ -1,8 +1,4 @@
 @namespace h "http://www.w3.org/1999/xhtml";
-body { 
-  
- 
-}
 p { 
   line-height: 1.2 em 
 }
@@ -17,7 +13,7 @@ h1.part, h2.subtitle {
 .linenum  {
    float: right;
    font-size: 0.8em;
-   color: #999;
+   color: #333;
    font-style: italic;
    }
 .prosenum  {
@@ -27,7 +23,7 @@ h1.part, h2.subtitle {
    }
 .boldnum   {
    font-size: 0.8em;
-   color: #666;
+   color: #333;
    font-style: italic;
    font-weight: bold;
 }
@@ -46,4 +42,14 @@ p.cover {
 
 img.cover {
 	height: 100%;
+}
+/*Font*/
+@font-face {
+	font-family: GFSPorson;
+	font-weight: normal;
+	font-style: normal;
+	src: url(replacement_font.otf);
+}
+body { 
+	font-family: "GFSPorson", serif;
 }
