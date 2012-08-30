@@ -16,20 +16,20 @@ In some of the documents there exists only a cover and flyleaf, without any cont
 
 Once again due to div tags, chapters are being repeated throughout the epub document. The issue here lies in the separation of the document into individual html files. Tei2epub is obviously coded to create an html file for every div. However, when divs are nested into one another, it begins to repeat itself. For example, if a text look like this:
 
-<xmp>
-<div>
-<div>
+
+&lt;div&gt;
+&lt;div&gt;
 Hello! My name is George!
-</div>
-<div>
+&lt;/div&gt;
+&lt;div&gt;
 I work in a shoe factory.
-</div>
-<div> 
+&lt;/div&gt;
+&lt;div&gt; 
 I have three children. 
-<div> Their names are Sarah, John and Mark. </div>
-</div>
-</div>
-</xmp>
+&lt;div&gt; Their names are Sarah, John and Mark. &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
 
 The final document would appear:
 
@@ -44,10 +44,10 @@ Their names are Sarah, John and Mark.
 
 I have the following code, which should fix the issue:
 
-<xmp>
-<xsl:if test="not(ancestor::div)">
-</xsl:if>
-</xmp>
+
+&lt;xsl:if test="not(ancestor::div)"&gt;
+&lt;/xsl:if&gt;
+
 
 If we can find exactly where the html files are being created, we should be able to slip this in and fix the issue.
 
