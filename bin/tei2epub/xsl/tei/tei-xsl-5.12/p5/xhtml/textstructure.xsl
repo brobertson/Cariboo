@@ -977,7 +977,7 @@ $requestedID: requests a particular page
     <xd:detail> </xd:detail>
   </xd:doc>
  <xsl:template name="doDivBody">
-    <xsl:param name="Type"/><!--WHAT IS THIS?Where is the value?-->
+    <xsl:param name="Type"/>
     <xsl:call-template name="startDivHook"/>
     <xsl:variable name="ident">
       <xsl:apply-templates mode="ident" select="."/>
@@ -1008,9 +1008,9 @@ $requestedID: requests a particular page
         </table>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:if test="not($Type = '')"><!-- and parent::tei:div/@type='episode'-->
+        <xsl:if test="not($Type = '')">
 	
-          <xsl:element name="h{$Type + $divOffset}"><xsl:attribute name="class">shouldIhide-<xsl:value-of select="tei:head"/></xsl:attribute>
+          <xsl:element name="h{$Type + $divOffset}">
             <xsl:if test="$xhtml='false'">
               <a name="{$ident}"/>
             </xsl:if>
@@ -1471,7 +1471,6 @@ $requestedID: requests a particular page
 	</xsl:if>
       </xsl:for-each>
       <!-- body matter -->
-<!--interest for Tine-->
       <xsl:for-each select="tei:body">
 	<xsl:if test="tei:div1|tei:div">
 	  <div class="tocBody">
@@ -2576,7 +2575,7 @@ $requestedID: requests a particular page
     <xsl:param name="force">false</xsl:param>
     <xsl:choose>
       <xsl:when test="tei:div0">
-        <xsl:for-each select="tei:head[text()='book']"><!-- <xsl:for-each select="tei:div0[tei:head or $autoHead='true']">-->
+        <xsl:for-each select="tei:div0[tei:head or $autoHead='true']">
           <xsl:call-template name="tocEntry">
             <xsl:with-param name="style" select="$style"/>
             <xsl:with-param name="id" select="$id"/>
@@ -2584,14 +2583,14 @@ $requestedID: requests a particular page
         </xsl:for-each>
       </xsl:when>
       <xsl:when test="tei:div1">
-        <xsl:for-each select="tei:head[text()='book']"><!-- <xsl:for-each select="tei:div1[tei:head or $autoHead='true']">-->
+        <xsl:for-each select="tei:div1[tei:head or $autoHead='true']">
           <xsl:call-template name="tocEntry">
             <xsl:with-param name="style" select="$style"/>
             <xsl:with-param name="id" select="$id"/>
           </xsl:call-template>
         </xsl:for-each>
       </xsl:when>
-      <xsl:when test="tei:div2 and ($splitLevel &gt;=1 or $force='true')"><!--<xsl:when test="tei:div2 and ($splitLevel &gt;=1 or $force='true')">-->
+      <xsl:when test="tei:div2 and ($splitLevel &gt;=1 or $force='true')">
         <xsl:for-each select="tei:head[text()='book']">
           <xsl:call-template name="tocEntry">
             <xsl:with-param name="style" select="$style"/>
@@ -2599,20 +2598,20 @@ $requestedID: requests a particular page
           </xsl:call-template>
         </xsl:for-each>
       </xsl:when>
-      <xsl:when test="tei:div3 and ($splitLevel &gt;=2 or $force='true')"><!-- <xsl:when test="tei:div3 and ($splitLevel &gt;=2 or $force='true')">-->
-        <xsl:for-each select="tei:head[text()='book']"><!--xsl:for-each select="tei:div3[tei:head or $autoHead='true']">-->
+      <xsl:when test="tei:div3 and ($splitLevel &gt;=2 or $force='true')">
+        <xsl:for-each select="tei:div3[tei:head or $autoHead='true']">
           <xsl:call-template name="tocEntry">
             <xsl:with-param name="style" select="$style"/>
             <xsl:with-param name="id" select="$id"/>
           </xsl:call-template>
         </xsl:for-each>
       </xsl:when>
-      <xsl:when test="self::tei:div[tei:head(text()='book')]"><!--<xsl:when test="self::tei:div">-->
+      <xsl:when test="self::tei:div">
         <xsl:variable name="depth">
           <xsl:apply-templates mode="depth" select="."/>
         </xsl:variable>
         <xsl:if test="($splitLevel&gt;$depth  or $force='true')">
-          <xsl:for-each select="tei:head[text()='book']"><!--<xsl:for-each select="tei:div[tei:head or $autoHead='true']">-->
+          <xsl:for-each select="tei:div[tei:head or $autoHead='true']">
             <xsl:call-template name="tocEntry">
               <xsl:with-param name="style" select="$style"/>
               <xsl:with-param name="id" select="$id"/>
@@ -2621,7 +2620,7 @@ $requestedID: requests a particular page
         </xsl:if>
       </xsl:when>
       <xsl:otherwise>
-        <xsl:for-each select="tei:head[text()='book']"><!--<xsl:for-each select="tei:div[tei:head or $autoHead='true']">-->
+        <xsl:for-each select="tei:div[tei:head or $autoHead='true']">
           <xsl:call-template name="tocEntry">
             <xsl:with-param name="style" select="$style"/>
             <xsl:with-param name="id" select="$id"/>

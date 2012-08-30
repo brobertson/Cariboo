@@ -30,7 +30,7 @@
     <xd:cvsId>$Id: core.xsl 4565 2008-05-07 02:17:56Z dsew $</xd:cvsId>
     <xd:copyright>2007, TEI Consortium</xd:copyright>
   </xd:doc>
-  <xd:doc>
+<xd:doc>    
     <xd:short>Process elements tei:*</xd:short>
     <xd:param name="forcedepth">forcedepth</xd:param>
     <xd:detail>
@@ -42,7 +42,7 @@
     <xsl:variable name="myName">
       <xsl:value-of select="local-name(.)"/>
     </xsl:variable>
-    <xsl:if test="tei:head[text()='book']"><!--tei:head or $autoHead='true'-->
+    <xsl:if test="tei:head or $autoHead='true'">
       <xsl:variable name="Depth">
         <xsl:choose>
           <xsl:when test="not($forcedepth='')">
@@ -1548,15 +1548,13 @@
   </xd:doc>
   <xsl:template name="continuedToc">
     <xsl:if
-      test="tei:head=text()='book'">
-      <ul class="toc"><!--<xsl:if
       test="tei:div|tei:div0|tei:div1|tei:div2|tei:div3|tei:div4|tei:div5|tei:div6">
-      <ul class="toc">-->
+      <ul class="toc">
         <xsl:apply-templates mode="maketoc"
           select="tei:head=text()='book'"
-        /><!--<xsl:apply-templates mode="maketoc"
+        /><xsl:apply-templates mode="maketoc"
           select="tei:div|tei:div0|tei:div1|tei:div2|tei:div3|tei:div4|tei:div5|tei:div6"
-        />-->
+        />
       </ul>
     </xsl:if>
   </xsl:template>
