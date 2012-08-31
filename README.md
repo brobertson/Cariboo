@@ -33,7 +33,7 @@ I have three children.
 
 The final document would appear:
 
-Hello! My name is George.
+Hello! My name is George!
 I work in a shoe factory.
 I have three children. 
 Their names are Sarah, John and Mark.
@@ -53,11 +53,11 @@ If we can find exactly where the html files are being created, we should be able
 
 <i>PAGEBREAKS:</i>
 
-In many documents only a few lines/words are appearing on each page when viewed. While I'm not entirely d=sure why this is happening, it is likely due to either a paragraphing issue in the xml itself or another issue with generic div tags.
+In many documents only a few lines/words are appearing on each page when viewed. While I'm not entirely sure why this is happening, it is likely due to either a paragraphing issue in the xml itself or another issue with generic div tags.
 
 <i>NO TOC:</i>
 
-This is not so much a bug as it is a formatting choice. We have written into tei2epub that certain Dramas should not have any sort of TOC. This was originally due to a titling issue wherein chapters were made every few lines with names such as "episode etc.". While we may wish to edit this later, this has been documented for us to distinguish between those that are affected by this code and those that aren't. 
+This is not so much a bug as it is a formatting choice. We have written into tei2epub that certain Dramas should not have any sort of TOC. This was originally due to a titling issue wherein chapters were made every few lines with names such as "episode" etc... While we may wish to edit this later, this has been documented for us to distinguish between those that are affected by this code and those that aren't. 
 
 <i>NO AUTHOR:</i>
 
@@ -69,7 +69,7 @@ In these documents the first few pages are entirely bolded as if they were being
 
 <i>AUTHOR RUNS OFF:</i>
 
-Occasionally, the author's name is so long that it does not fit on the cover image. To fix this we simply need to define a maximum size for the authors name and code it to resize the text to fit. These edits should be found in the included bash script which creates the cover image. 
+Occasionally, the author's name is so long that it does not fit on the cover image. To fix this we simply need to define a maximum size for the authors name and code it to resize the text to fit. These edits should be found in the included bash script (tei_p4_to_epub_and_mobi.sh) which creates the cover image. 
 
 <i>TITLE RUNS OFF:</i>
 
@@ -81,7 +81,7 @@ Within the text itself very rarely it seems to incorporate large sections of tex
 
 <i>ODD TOC TITLES:</i>
 
-In some of the Tables of Contents, the listed titles are slightly longer and look peculiar. Someone with knowledge for the texts may be able to recognize if these are intended or simple a bug that needs to be addressed. 
+In some of the Tables of Contents, the listed titles are slightly longer and look peculiar. Someone with knowledge for the texts may be able to recognize if these are intended or simply a bug that needs to be addressed. 
 
 <i>'MACHINE READABLE TEXT':</i>
 
